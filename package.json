@@ -2,7 +2,7 @@
   "name": "mytube-monorepo",
   "private": true,
   "version": "0.1.0",
-  "packageManager": "pnpm@8",
+  "packageManager": "pnpm@8.15.4",
   "scripts": {
     "lint": "pnpm -r lint",
     "dev": "pnpm --filter @mytube/web dev",
