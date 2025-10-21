@@ -11,8 +11,8 @@
   },
   "dependencies": {
     "@headlessui/react": "^1.7.18",
-    "@metube/design": "workspace:*",
-    "@metube/shared-model": "workspace:*",
+    "@metube/design": "file:../../packages/design",
+    "@metube/shared-model": "file:../../packages/shared-model",
     "@supabase/auth-helpers-nextjs": "^0.9.1",
     "@supabase/auth-helpers-react": "^0.4.6",
     "@supabase/supabase-js": "^2.39.1",
