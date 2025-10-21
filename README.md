@@ -4,10 +4,10 @@ MeTube is a minimal, family-friendly web app that only surfaces YouTube videos f
 
 ## Getting Started
 
-1. Install dependencies using npm workspaces:
+1. Install dependencies with pnpm:
 
    ```bash
-   npm install
+   pnpm install
    ```
 
 2. Copy the environment template for the web app:
@@ -77,10 +77,15 @@ MeTube is a minimal, family-friendly web app that only surfaces YouTube videos f
 5. Start the development server:
 
    ```bash
-   npm run dev --workspace @metube/web
+   pnpm --filter @metube/web dev
    ```
 
 The app runs on [http://localhost:3000](http://localhost:3000).
+
+### Deployment Notes
+
+- Vercel builds use Node.js 20.16.0 to avoid a regression in newer Node 20 releases that breaks `pnpm install` with `URLSearchParams` errors. Keep the `engines.node` setting in the root `package.json` aligned with a working minor release until the upstream bug is resolved.
+- The project relies on pnpm workspaces; Vercel is configured via `vercel.json` to activate the pinned pnpm version before running installs.
 
 ## YouTube API Setup
 
