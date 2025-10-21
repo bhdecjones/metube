@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { cookies } from 'next/headers';
-import { AddChannelInputSchema, ChannelSchema } from '@mytube/shared-model';
+import { AddChannelInputSchema, ChannelSchema } from '@metube/shared-model';
 import { getRouteHandlerSupabase } from '@/lib/supabaseClient';
 
 export async function GET(

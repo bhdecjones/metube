@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { cookies } from 'next/headers';
-import { VideoSchema, VideoListQuerySchema } from '@mytube/shared-model';
+import { VideoSchema, VideoListQuerySchema } from '@metube/shared-model';
 import { loadVideosForChannel, getCachedVideosForChannel } from '@/lib/youtube';
 import { getRouteHandlerSupabase } from '@/lib/supabaseClient';
 

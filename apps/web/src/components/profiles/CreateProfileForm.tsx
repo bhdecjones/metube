@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
-import { ProfileKind } from '@mytube/shared-model';
+import { ProfileKind } from '@metube/shared-model';
 
 interface Props {
   kind: ProfileKind;

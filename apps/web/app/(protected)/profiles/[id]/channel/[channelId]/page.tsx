@@ -2,7 +2,7 @@ import { cookies } from 'next/headers';
 import { notFound } from 'next/navigation';
 import { createServerComponentClient } from '@supabase/auth-helpers-nextjs';
 import { loadVideosForChannel, getCachedVideosForChannel } from '@/lib/youtube';
-import { VideoSchema } from '@mytube/shared-model';
+import { VideoSchema } from '@metube/shared-model';
 import { ProfileHomeClient } from '@/components/videos/ProfileHomeClient';
 
 interface Props {

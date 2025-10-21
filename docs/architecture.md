@@ -1,13 +1,13 @@
-# MyTube Architecture
+# MeTube Architecture
 
-MyTube is a minimal multi-profile YouTube viewer that limits playback to whitelisted channels defined by a parent account.
+MeTube is a minimal multi-profile YouTube viewer that limits playback to whitelisted channels defined by a parent account.
 
 ## Overview
 
 - **Frontend**: Next.js App Router application located at `apps/web`. It is written in TypeScript and styled with Tailwind CSS using a black and white palette.
 - **Packages**: Shared libraries live under `packages/`.
-  - `@mytube/shared-model` contains Zod schemas shared across server and client for request/response validation.
-  - `@mytube/design` exposes design tokens and the MyTube logotype SVG.
+  - `@metube/shared-model` contains Zod schemas shared across server and client for request/response validation.
+  - `@metube/design` exposes design tokens and the MeTube logotype SVG.
 - **Backend helpers**: `backend/` contains utilities for interacting with Supabase and the YouTube Data API.
 - **Database**: Supabase hosts authentication and Postgres tables. The schema is defined in `README.md` and mirrors the SQL provided in the product brief.
 - **Routing**: Profiles, admin tools, and channel/video browsing are implemented as nested routes inside the App Router.

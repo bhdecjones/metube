@@ -1,7 +1,7 @@
 import dayjs from 'dayjs';
 import { cookies } from 'next/headers';
 import { getRouteHandlerSupabase } from '@/lib/supabaseClient';
-import { VideoSchema } from '@mytube/shared-model';
+import { VideoSchema } from '@metube/shared-model';
 
 const YOUTUBE_API_KEY = process.env.YOUTUBE_API_KEY;
 const MIN_DURATION = Number(process.env.NEXT_PUBLIC_MIN_DURATION_SECONDS ?? '60');

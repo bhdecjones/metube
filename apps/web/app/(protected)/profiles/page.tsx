@@ -1,6 +1,6 @@
 import { cookies } from 'next/headers';
 import { createServerComponentClient } from '@supabase/auth-helpers-nextjs';
-import { ProfileSchema } from '@mytube/shared-model';
+import { ProfileSchema } from '@metube/shared-model';
 import { ProfilePicker } from '@/components/profiles/ProfilePicker';
 import { CreateProfileForm } from '@/components/profiles/CreateProfileForm';
 

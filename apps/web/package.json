@@ -1,5 +1,5 @@
 {
-  "name": "@mytube/web",
+  "name": "@metube/web",
   "version": "0.1.0",
   "private": true,
   "type": "module",
@@ -11,8 +11,8 @@
   },
   "dependencies": {
     "@headlessui/react": "^1.7.18",
-    "@mytube/design": "workspace:*",
-    "@mytube/shared-model": "workspace:*",
+    "@metube/design": "workspace:*",
+    "@metube/shared-model": "workspace:*",
     "@supabase/auth-helpers-nextjs": "^0.9.1",
     "@supabase/auth-helpers-react": "^0.4.6",
     "@supabase/supabase-js": "^2.39.1",

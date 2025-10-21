@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { ChannelSearchResultSchema } from '@mytube/shared-model';
+import { ChannelSearchResultSchema } from '@metube/shared-model';
 
 const YOUTUBE_API_KEY = process.env.YOUTUBE_API_KEY;
 
