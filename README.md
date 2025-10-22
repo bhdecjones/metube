@@ -1,13 +1,13 @@
-# MyTube
+# MeTube
 
-MyTube is a minimal, family-friendly web app that only surfaces YouTube videos from parent-approved channels.
+MeTube is a minimal, family-friendly web app that only surfaces YouTube videos from parent-approved channels.
 
 ## Getting Started
 
-1. Install dependencies using pnpm:
+1. Install dependencies with npm:
 
    ```bash
-   pnpm install
+   npm install
    ```
 
 2. Copy the environment template for the web app:
@@ -19,7 +19,7 @@ MyTube is a minimal, family-friendly web app that only surfaces YouTube videos f
 3. Populate the environment file with your project credentials:
 
    ```env
-   NEXT_PUBLIC_APP_NAME=MyTube
+   NEXT_PUBLIC_APP_NAME=MeTube
    SUPABASE_URL=your-supabase-url
    SUPABASE_ANON_KEY=your-anon-key
    SUPABASE_SERVICE_ROLE_KEY=service-role-key-for-server-actions
@@ -77,10 +77,15 @@ MyTube is a minimal, family-friendly web app that only surfaces YouTube videos f
 5. Start the development server:
 
    ```bash
-   pnpm --filter @mytube/web dev
+   npm --workspace @metube/web run dev
    ```
 
 The app runs on [http://localhost:3000](http://localhost:3000).
+
+### Deployment Notes
+
+- Vercel builds run on Node.js 22.x as configured in the root `package.json`. Ensure the project setting in Vercel matches the declared major version so the build image selects a compatible runtime.
+- The repository is managed with npm workspaces. The default Vercel install step (`npm install`) will install all workspace dependencies, and the build step targets the web workspace directly via `npm run build --workspace @metube/web`.
 
 ## YouTube API Setup
 

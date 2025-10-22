@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { cookies } from 'next/headers';
-import { ChannelSchema } from '@mytube/shared-model';
+import { ChannelSchema } from '@metube/shared-model';
 import { getRouteHandlerSupabase } from '@/lib/supabaseClient';
 
 const YOUTUBE_API_KEY = process.env.YOUTUBE_API_KEY;

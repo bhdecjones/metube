@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useMemo, useState } from 'react';
-import { Channel, Profile } from '@mytube/shared-model';
+import { Channel, Profile } from '@metube/shared-model';
 
 interface ChannelWithProfile extends Channel {
   profileId: string;

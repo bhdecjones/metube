@@ -1,5 +1,5 @@
 {
-  "name": "@mytube/shared-model",
+  "name": "@metube/shared-model",
   "version": "0.1.0",
   "type": "module",
   "main": "src/index.ts",

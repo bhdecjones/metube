@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { cookies } from 'next/headers';
-import { CreateProfileInputSchema, ProfileSchema } from '@mytube/shared-model';
+import { CreateProfileInputSchema, ProfileSchema } from '@metube/shared-model';
 import { getRouteHandlerSupabase } from '@/lib/supabaseClient';
 
 export async function POST(request: NextRequest) {

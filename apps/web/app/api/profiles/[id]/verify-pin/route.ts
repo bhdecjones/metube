@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { cookies } from 'next/headers';
-import { SetPinInputSchema } from '@mytube/shared-model';
+import { SetPinInputSchema } from '@metube/shared-model';
 import { getRouteHandlerSupabase } from '@/lib/supabaseClient';
 import { createHash } from 'crypto';
 

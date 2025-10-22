@@ -1,7 +1,7 @@
 import { cookies } from 'next/headers';
 import { createServerComponentClient } from '@supabase/auth-helpers-nextjs';
 import { redirect } from 'next/navigation';
-import { ProfileSchema, ChannelSchema } from '@mytube/shared-model';
+import { ProfileSchema, ChannelSchema } from '@metube/shared-model';
 import { AdminDashboardClient } from '@/components/admin/AdminDashboardClient';
 
 export default async function AdminPage() {

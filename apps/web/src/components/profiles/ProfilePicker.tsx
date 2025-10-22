@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
-import { Profile } from '@mytube/shared-model';
+import { Profile } from '@metube/shared-model';
 import { PinDialog } from '@/components/modals/PinDialog';
 
 interface ProfilePickerProps {

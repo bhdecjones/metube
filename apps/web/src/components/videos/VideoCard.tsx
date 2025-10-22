@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 import { useRef } from 'react';
-import { Video } from '@mytube/shared-model';
+import { Video } from '@metube/shared-model';
 
 interface Props {
   video: Video;

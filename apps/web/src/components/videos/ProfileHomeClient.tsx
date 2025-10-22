@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import { Video } from '@mytube/shared-model';
+import { Video } from '@metube/shared-model';
 import { VideoCard } from './VideoCard';
 import { YTPlayer } from './YTPlayer';
 import { EndOverlay } from './EndOverlay';
